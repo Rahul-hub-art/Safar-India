@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Account - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html" onclick="goWishlist()">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user" onclick="gomyaccount()"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping" onclick="goCart()"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn" onclick="goLogin()">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="account-hero">
+  <h1>My Account</h1>
+  <p>Manage your profile, bookings & wishlist</p>
+</section>
+
+<section class="account-section">
+
+  <!-- SIDEBAR -->
+  <div class="account-sidebar">
+    <h2>My Account</h2>
+
+    <ul>
+      <li onclick="showTab('profile')" class="active">
+        <i class="fa fa-user"></i> Profile
+      </li>
+      <li onclick="showTab('bookings')">
+        <i class="fa fa-suitcase"></i> Bookings
+      </li>
+      <li onclick="showTab('wishlist')">
+        <i class="fa fa-heart"></i> Wishlist
+      </li>
+      <li onclick="logout()">
+        <i class="fa fa-right-from-bracket"></i> Logout
+      </li>
+      <li onclick="showTab('notifications')">
+  <i class="fa fa-bell"></i> Notifications
+</li>
+
+<li onclick="showTab('payments')">
+  <i class="fa fa-credit-card"></i> Payments
+</li>
+
+<li onclick="showTab('settings')">
+  <i class="fa fa-gear"></i> Settings
+</li>
+
+<li onclick="showTab('history')">
+  <i class="fa fa-clock-rotate-left"></i> History
+</li>
+
+<li onclick="showTab('support')">
+  <i class="fa fa-headset"></i> Support
+</li>
+
+<li onclick="showTab('security')">
+  <i class="fa fa-shield-halved"></i> Security
+</li>
+
+<li onclick="showTab('reviews')">
+  <i class="fa fa-star"></i> My Reviews
+</li>
+
+<li onclick="showTab('offers')">
+  <i class="fa fa-tags"></i> Offers & Deals
+</li>
+
+<li onclick="showTab('help')">
+  <i class="fa fa-circle-question"></i> Help Center
+</li>
+    </ul>
+    
+  </div>
+
+  <!-- CONTENT -->
+  <div class="account-content">
+
+    <div id="profile" class="tab active">
+  <h2 class="profile-title">Profile Information</h2>
+
+  <div class="profile-wrapper">
+
+    <div class="profile-box">
+
+      <div class="form-row">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="Phone Number">
+        <input type="text" placeholder="Username">
+      </div>
+
+      <div class="form-row">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Country">
+      </div>
+
+      <div class="form-row">
+        <input type="date" placeholder="Date of Birth">
+        <input type="text" placeholder="Pincode">
+      </div>
+
+      <input type="text" placeholder="Occupation">
+
+      <textarea placeholder="Full Address"></textarea>
+
+      <button onclick="saveProfile()">Save Changes</button>
+
+    </div>
+
+  </div>
+</div>
+
+    <!-- BOOKINGS -->
+    <div id="bookings" class="tab">
+      <h2>Your Bookings</h2>
+
+      <div class="booking-list">
+        <div class="booking-card">
+          <h3>Manali Trip</h3>
+          <p>5 Days • ₹15,999 • Confirmed</p>
+        </div>
+
+        <div class="booking-card">
+          <h3>Goa Beach Tour</h3>
+          <p>3 Days • ₹9,999 • Pending</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WISHLIST -->
+    <div id="wishlist" class="tab">
+      <h2>Your Wishlist</h2>
+
+      <div class="wishlist-preview">
+        <div class="wishlist-card">
+          <h4>Leh Ladakh</h4>
+          <p>Adventure Destination</p>
+        </div>
+
+        <div class="wishlist-card">
+          <h4>Kerala</h4>
+          <p>Nature & Backwaters</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

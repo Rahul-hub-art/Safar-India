@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html" onclick="goWishlist()">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user" onclick="gomyaccount()"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping" onclick="goCart()"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn" onclick="goLogin()">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+
+<div class="login-container">
+
+  <div class="loginpage-box">
+
+    <h2 id="formTitle">Welcome Back 👋</h2>
+    <p class="subtitle">Login to continue your journey</p>
+
+    <!-- FORM -->
+    <form id="authForm">
+
+      <!-- NAME (SIGNUP ONLY) -->
+      <input type="text" id="name" placeholder="Full Name" style="display:none;">
+
+      <!-- EMAIL -->
+      <input type="email" id="email" placeholder="Email" required>
+
+      <!-- PASSWORD -->
+      <div class="password-box">
+        <input type="password" id="password" placeholder="Password" required>
+        <i class="fa fa-eye" onclick="togglePassword()"></i>
+      </div>
+
+      <!-- OPTIONS -->
+      <div class="options">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <!-- BUTTON -->
+      <button type="submit" id="submitBtn">Login</button>
+
+      
+
+    </form>
+
+    <!-- SWITCH -->
+    <p id="switchText">
+      Don't have an account?
+      <span onclick="toggleForm()">Sign Up</span>
+    </p>
+
+    <!-- SOCIAL -->
+    <div class="social-login">
+      <p>Or login with</p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

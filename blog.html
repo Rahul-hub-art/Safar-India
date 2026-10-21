@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="blog-hero">
+  <h1>Travel Blog</h1>
+  <p>Tips, guides & inspiration for your next journey</p>
+</section>
+
+<!-- SEARCH + FILTER -->
+<section class="blog-filter">
+
+  <input type="text" id="searchBlog" placeholder="Search blog...">
+
+  <div class="categories">
+    <button onclick="filterBlog('all')">All</button>
+    <button onclick="filterBlog('tips')">Travel Tips</button>
+    <button onclick="filterBlog('adventure')">Adventure</button>
+    <button onclick="filterBlog('luxury')">Luxury</button>
+  </div>
+
+</section>
+
+<!-- MAIN LAYOUT -->
+<section class="blog-layout">
+
+  <!-- LEFT BLOGS -->
+  <div class="blog-container" id="blogContainer">
+
+    <!-- FEATURED -->
+    <div class="featured-blog">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+      <div class="blog-content">
+        <span class="tag">Featured</span>
+        <h2>Top 10 Beaches in India</h2>
+        <p>Discover the most beautiful beaches to explore in India.</p>
+      </div>
+    </div>
+
+    <!-- BLOG CARD -->
+    <div class="blog-card tips">
+      <img src="https://plus.unsplash.com/premium_photo-1663054911397-c7fe60ec3849">
+      <div class="blog-info">
+        <h3>Travel Tips for Beginners</h3>
+        <p>Plan your trip like a pro with these simple tips.</p>
+      </div>
+    </div>
+
+    <div class="blog-card adventure">
+      <img src="https://images.unsplash.com/photo-1618083707368-b3823daa2726">
+      <div class="blog-info">
+        <h3>Best Adventure Destinations</h3>
+        <p>Explore thrilling locations across India.</p>
+      </div>
+    </div>
+
+    <div class="blog-card luxury">
+      <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4">
+      <div class="blog-info">
+        <h3>Luxury Travel Guide</h3>
+        <p>Experience premium travel like never before.</p>
+      </div>
+    </div>
+
+    <div class="blog-card tips">
+  <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
+  <div class="blog-info">
+    <h3>Packing Tips for Smart Travel</h3>
+    <p>Learn how to pack efficiently with minimal luggage, essential items, and smart hacks for comfortable and stress free journeys.</p>
+  </div>
+</div>
+
+<div class="blog-card adventure">
+  <img src="https://images.unsplash.com/photo-1617380613434-7495e9b45dfb">
+  <div class="blog-info">
+    <h3>Himalayan Trekking Guide</h3>
+    <p>Explore breathtaking Himalayan trails with safety tips, best seasons, and must visit trekking destinations for adventure lovers.</p>
+  </div>
+</div>
+
+<div class="blog-card luxury">
+  <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945">
+  <div class="blog-info">
+    <h3>Luxury Resorts in India</h3>
+    <p>Discover premium resorts offering world class comfort, stunning views, luxury amenities, and unforgettable travel experiences across India.</p>
+  </div>
+</div>
+
+<div class="blog-card tips">
+  <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1">
+  <div class="blog-info">
+    <h3>Budget Travel Guide</h3>
+    <p>Travel smart on a budget with affordable destinations, cheap transport options, and money saving tips for unforgettable trips.</p>
+  </div>
+</div>
+
+<div class="blog-card adventure">
+  <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+  <div class="blog-info">
+    <h3>Desert Safari Experience</h3>
+    <p>Enjoy thrilling desert safari rides, cultural performances, and unique experiences in the golden sands of Rajasthan deserts.</p>
+  </div>
+</div>
+
+<div class="blog-card tips">
+  <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+  <div class="blog-info">
+    <h3>Budget Travel Guide India</h3>
+    <p>Explore amazing destinations across India with smart planning, low-cost stays, local transport tips, and budget-friendly experiences without compromising adventure, comfort, or unforgettable travel memories.</p>
+  </div>
+</div>
+
+<div class="blog-card tips">
+  <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+  <div class="blog-info">
+    <h3>Budget Travel Guide India</h3>
+    <p>Explore amazing destinations across India with smart planning, low-cost stays, local transport tips, and budget-friendly experiences without compromising adventure, comfort, or unforgettable travel memories.</p>
+  </div>
+</div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="blog-sidebar">
+
+    <h3>Tags</h3>
+    <div class="tags">
+      <span>Travel</span>
+      <span>Adventure</span>
+      <span>Beach</span>
+      <span>Luxury</span>
+    </div>
+
+    <h3>Popular Posts</h3>
+
+    <div class="side-post">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Manali Travel Guide</p>
+    </div>
+
+    <div class="side-post">
+      <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+      <p>Goa Nightlife</p>
+    </div>
+
+    <div class="side-post">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+  <p>Best Beaches in Goa</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+  <p>Jaipur Heritage Walk</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+  <p>Manali Snow Adventure</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66">
+  <p>Kerala Backwaters Experience</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad">
+  <p>Leh Ladakh Road Trip</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff">
+  <p>Himalayan Trekking Guide</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+  <p>Rishikesh River Rafting</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
+  <p>Udaipur Lake City Tour</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7">
+  <p>Andaman Island Escape</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba">
+  <p>Darjeeling Tea Gardens</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a">
+  <p>Delhi Street Food Tour</p>
+</div>
+
+<div class="side-post">
+  <img src="https://plus.unsplash.com/premium_photo-1666976509887-e33fa169533f">
+  <p>Coorg Coffee Plantation</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+  <p>Shimla Winter Vacation</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9">
+  <p>Spiti Valley Adventure</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da">
+  <p>Varanasi Spiritual Tour</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7">
+  <p>Andaman Beach Paradise</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+  <p>Goa Sunset Views</p>
+</div>
+
+<div class="side-post">
+  <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+  <p>Jodhpur Blue City Tour</p>
+</div>
+
+
+  </aside>
+
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

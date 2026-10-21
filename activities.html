@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="activities.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user" onclick="gomyaccount()"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping" onclick="goCart()"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn" onclick="goLogin()">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- HERO -->
+<section class="activity-hero">
+  <div class="activity-overlay">
+    <h1>Explore Adventure Activities</h1>
+    <p>Discover thrilling experiences across India</p>
+    <button>Start Exploring</button>
+  </div>
+</section>
+
+
+<!-- FEATURED -->
+<section class="featured">
+  <div class="featured-card">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+    <div class="featured-content">
+      <h2>Scuba Diving in Goa</h2>
+      <p>Experience the beauty of underwater life</p>
+      <button onclick="openBooking('Scuba Diving')">Book Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORY FILTER -->
+<section class="category-filter"id="categoryFilter">
+  <button onclick="filterActivities('all')" class="active">All</button>
+  <button onclick="filterActivities('water')">Water</button>
+  <button onclick="filterActivities('mountain')">Mountain</button>
+  <button onclick="filterActivities('wildlife')">Wildlife</button>
+</section>
+
+<!-- ACTIVITIES GRID -->
+<section class="activity-grid-page">
+
+  <div class="activity-card-page water">
+  <span class="badge-page">Popular</span>
+  <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e">
+  <div class="info">
+    <h3>River Rafting</h3>
+    <p>Rishikesh</p>
+
+    <p class="desc">
+      Experience thrilling river rafting in Rishikesh with fast-flowing rapids, scenic mountain views, and expert guidance. This adventure is perfect for beginners and professionals, offering excitement, safety, and unforgettable memories while navigating the holy Ganga river surrounded by nature.
+    </p>
+
+    <div class="extra">
+      Best Time: Oct–June | Difficulty: Moderate | Age: 14+
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.8</span>
+      <span>₹1500</span>
+    </div>
+
+    <button onclick="openBooking('River Rafting')">Book</button>
+    <button onclick="addToWishlist('River Rafting','https://images.unsplash.com/photo-1512343879784-a960bf40e7f2','Adventure • Water Sport')">
+      ❤️ Add to Wishlist
+    </button>
+  </div>
+</div>
+
+<div class="activity-card-page mountain">
+  <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+  <div class="info">
+    <h3>Trekking</h3>
+    <p>Manali</p>
+
+    <p class="desc">
+      Trek through the beautiful mountains of Manali surrounded by snow peaks, forests, and fresh air. This activity offers a peaceful yet adventurous journey, ideal for nature lovers seeking exploration, photography opportunities, and a break from busy city life.
+    </p>
+
+    <div class="extra">
+      Best Time: Mar–Nov | Difficulty: Easy–Moderate | Guide Included
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.7</span>
+      <span>₹2000</span>
+    </div>
+
+    <button onclick="openBooking('Trekking')">Book</button>
+    <button onclick="addToWishlist('Manali','https://images.unsplash.com/photo-1512343879784-a960bf40e7f2','Mountain • Camping')">
+      ❤️ Add to Wishlist
+    </button>
+  </div>
+</div>
+
+<div class="activity-card-page wildlife">
+  <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+  <div class="info">
+    <h3>Jungle Safari</h3>
+    <p>Ranthambore</p>
+
+    <p class="desc">
+      Explore the wild forests of Ranthambore and witness majestic animals like tigers, deer, and exotic birds in their natural habitat. This safari provides an exciting and educational experience guided by experts, making it perfect for wildlife enthusiasts and photographers.
+    </p>
+
+    <div class="extra">
+      Best Time: Oct–Apr | Duration: 3–4 Hours | Jeep Safari
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.6</span>
+      <span>₹1800</span>
+    </div>
+
+    <button onclick="openBooking('Safari')">Book</button>
+    <button onclick="addToWishlist('Ranthambore','https://images.unsplash.com/photo-1512343879784-a960bf40e7f2','Forest • Wild animal')">
+      ❤️ Add to Wishlist
+    </button>
+  </div>
+</div>
+
+<div class="activity-card-page water">
+  <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5">
+  <div class="info">
+    <h3>Scuba Diving</h3>
+    <p>Goa</p>
+
+    <p class="desc">
+      Dive into the deep blue waters of Goa and explore vibrant marine life, coral reefs, and underwater beauty. This guided activity ensures safety and excitement, offering a unique opportunity to experience the ocean world closely even for beginners.
+    </p>
+
+    <div class="extra">
+      Best Time: Oct–May | Depth: 10–12m | Trainer Included
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.9</span>
+      <span>₹3500</span>
+    </div>
+
+    <button onclick="openBooking('Scuba Diving')">Book</button>
+    <button onclick="addToWishlist('Scuba Diving','https://images.unsplash.com/photo-1544551763-46a013bb70d5','Sea • Adventure')">
+      ❤️ Add to Wishlist
+    </button>
+  </div>
+</div>
+
+<!-- Wildlife Safari -->
+<div class="activity-card-page wildlife">
+  <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5">
+  <div class="info">
+    <h3>Wildlife Safari</h3>
+    <p>Kaziranga</p>
+
+    <p class="desc">
+      Explore the rich biodiversity of Kaziranga National Park, home to the famous one-horned rhinoceros, elephants, and diverse bird species. Enjoy a thrilling jeep safari through lush grasslands and forests while experiencing nature up close in one of India’s most renowned wildlife destinations.
+    </p>
+
+    <div class="extra">
+      Best Time: Nov–Apr | Duration: 2–3 Hours | Jeep/Elephant Safari
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.8</span>
+      <span>₹3000</span>
+    </div>
+
+    <button onclick="openBooking('Wildlife Safari')">Book</button>
+    <button onclick="addToWishlist(
+      'Wildlife Safari',
+      'https://images.unsplash.com/photo-1474511320723-9a56873867b5',
+      'Nature • Wildlife'
+    )">
+      ❤️ Add to Wishlist
+    </button>
+  </div>
+</div>
+
+<div class="activity-card-page wildlife">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+  <div class="info">
+    <h3>Desert Safari</h3>
+    <p>Jaisalmer</p>
+
+    <p class="desc">
+      Experience the golden sands of Jaisalmer with thrilling desert safari rides, camel tours, and cultural performances. Enjoy stunning sunset views and traditional Rajasthani hospitality, making this a memorable and unique desert adventure.
+    </p>
+
+    <div class="extra">
+      Best Time: Nov–Feb | Duration: Evening | Camel Ride Included
+    </div>
+
+    <div class="meta-page">
+      <span>⭐ 4.6</span>
+      <span>₹2200</span>
+    </div>
+
+    <button onclick="openBooking('Desert Safari')">Book</button>
+    <button onclick="addToWishlist('Desert Safari','https://images.unsplash.com/photo-1500530855697-b586d89ba3ee','Desert • Adventure')">
+      ❤️Add to Wishlist
+    </button>
+  </div>
+</div>
+
+</section>
+
+<!-- BOOKING MODAL -->
+<div class="booking-modal" id="bookingModal">
+  <div class="modal-box">
+    <h2 id="activityName">Booking</h2>
+    <input placeholder="Your Name">
+    <input type="date">
+    <button onclick="confirmBooking()">Confirm</button>
+    <span class="close" onclick="closeModal()">×</span>
+  </div>
+</div>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="activities.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plans - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+<section class="plans-hero">
+  <h1>Choose Your Perfect Plan</h1>
+  <p>Affordable packages for every traveler</p>
+</section>
+
+<!-- TOGGLE -->
+<div class="toggle">
+  <span>Monthly</span>
+  <label class="switch">
+    <input type="checkbox" id="priceToggle">
+    <span class="slider"></span>
+  </label>
+  <span>Yearly</span>
+</div>
+
+<!-- PRICING -->
+<section class="plans">
+
+  <!-- BASIC -->
+  <div class="plan-card">
+    <h3>Basic</h3>
+    <p class="price" data-month="999" data-year="7999">₹999</p>
+    <ul>
+      <li>✔ 2 Destinations</li>
+      <li>✔ Budget Hotels</li>
+      <li>✔ Email Support</li>
+    </ul>
+    <button onclick="openPlan('Basic')">Choose Plan</button>
+  </div>
+
+  <!-- PREMIUM -->
+  <div class="plan-card popular">
+    <span class="tag">Best Value</span>
+    <h3>Premium</h3>
+    <p class="price" data-month="1999" data-year="14999">₹1999</p>
+    <ul>
+      <li>✔ 5 Destinations</li>
+      <li>✔ 3★ Hotels</li>
+      <li>✔ Free Activities</li>
+      <li>✔ 24/7 Support</li>
+    </ul>
+    <button onclick="openPlan('Premium')">Choose Plan</button>
+  </div>
+
+  <!-- LUXURY -->
+  <div class="plan-card">
+    <h3>Luxury</h3>
+    <p class="price" data-month="4999" data-year="39999">₹4999</p>
+    <ul>
+      <li>✔ Unlimited Destinations</li>
+      <li>✔ 5★ Hotels</li>
+      <li>✔ All Activities</li>
+      <li>✔ Personal Guide</li>
+    </ul>
+    <button onclick="openPlan('Luxury')">Choose Plan</button>
+  </div>
+
+  <div class="plan-card">
+  <h3>Basic</h3>
+  <p class="price" data-month="999" data-year="7999">₹999</p>
+  <ul>
+    <li>✔ 2 Destinations</li>
+    <li>✔ Budget Hotels</li>
+    <li>✔ Limited Activities</li>
+    <li>✔ Email Support</li>
+  </ul>
+  <button onclick="openPlan('Basic')">Choose Plan</button>
+</div>
+
+<div class="plan-card">
+  <span class="tag">Family Pack</span>
+  <h3>Family</h3>
+  <p class="price" data-month="2999" data-year="22999">₹2999</p>
+  <ul>
+    <li>✔ 6 Destinations</li>
+    <li>✔ 4★ Hotels</li>
+    <li>✔ Family Activities</li>
+    <li>✔ Kids Free (Below 5)</li>
+  </ul>
+  <button onclick="openPlan('Family')">Choose Plan</button>
+</div>
+
+<div class="plan-card">
+  <span class="tag">Couple Trip</span>
+  <h3>Couple</h3>
+  <p class="price" data-month="2799" data-year="19999">₹2799</p>
+  <ul>
+    <li>✔ Romantic Destinations</li>
+    <li>✔ Deluxe Hotel Stay</li>
+    <li>✔ Candle Light Dinner</li>
+    <li>✔ Private Cab</li>
+  </ul>
+  <button onclick="openPlan('Couple')">Choose Plan</button>
+</div>
+
+<div class="plan-card popular">
+  <span class="tag">Best Value</span>
+  <h3>Group</h3>
+  <p class="price" data-month="1999" data-year="14999">₹1999</p>
+  <ul>
+    <li>✔ 4 Destinations</li>
+    <li>✔ Budget to Premium Stay</li>
+    <li>✔ Shared Transport</li>
+    <li>✔ Fun Group Activities</li>
+  </ul>
+  <button onclick="openPlan('Group')">Choose Plan</button>
+</div>
+
+<div class="plan-card">
+  <span class="tag">Solo Trip</span>
+  <h3>Solo</h3>
+  <p class="price" data-month="1499" data-year="11999">₹1499</p>
+  <ul>
+    <li>✔ 3 Destinations</li>
+    <li>✔ Hostel / Budget Stay</li>
+    <li>✔ Guided Tours</li>
+    <li>✔ Community Access</li>
+  </ul>
+  <button onclick="openPlan('Solo')">Choose Plan</button>
+</div>
+
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison">
+  <h2>Compare Plans</h2>
+
+  <table>
+    <tr>
+      <th>Features</th>
+      <th>Basic</th>
+      <th>Premium</th>
+      <th>Luxury</th>
+    </tr>
+    <tr>
+      <td>Destinations</td>
+      <td>2</td>
+      <td>5</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td>Hotels</td>
+      <td>Budget</td>
+      <td>3★</td>
+      <td>5★</td>
+    </tr>
+    <tr>
+      <td>Support</td>
+      <td>Email</td>
+      <td>24/7</td>
+      <td>Priority</td>
+    </tr>
+    
+  </table>
+</section>
+
+<!-- MODAL -->
+<div class="plan-modal" id="planModal">
+  <div class="modal-box">
+    <h2 id="planName">Plan</h2>
+    <input placeholder="Your Name">
+    <input placeholder="Email">
+    <button onclick="confirmPlan()">Confirm</button>
+    <span class="close" onclick="closePlan()">×</span>
+  </div>
+</div>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

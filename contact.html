@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Us - Safar India</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+ <!-- LOGO -->
+  <div class="logo">
+    <i class="fas fa-plane-departure"></i> Safar India
+  </div>
+
+  <ul class="nav-links">
+
+    <li><a href="index.html">Home</a></li>
+
+    <li class="mega">
+  <a href="destinations.html">Destinations <i class="fa fa-angle-down"></i></a>
+
+  <div class="mega-menu">
+
+    <div class="mega-col">
+      <h4>Popular</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2">
+        <span>Goa</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <span>Manali</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1477587458883-47145ed94245">
+        <span>Jaipur</span>
+      </div>
+    </div>
+
+    <div class="mega-col">
+      <h4>Adventure</h4>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <span>Ladakh</span>
+      </div>
+
+      <div class="mega-item">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+        <span>Rishikesh</span>
+      </div>
+    </div>
+
+    <div class="mega-banner">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+      <p>Explore India with Best Deals</p>
+    </div>
+
+  </div>
+</li>
+
+    <!-- ACTIVITIES -->
+    <li class="dropdown">
+      <a href="activities.html">Activities <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Trekking</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Safari</a></li>
+        <li><a href="#">River Rafting</a></li>
+      </ul>
+    </li>
+
+    <!-- PLANS -->
+    <li class="dropdown">
+      <a href="plans.html">Plans <i class="fa fa-angle-down"></i></a>
+      <ul class="submenu">
+        <li><a href="#">Basic Plan</a></li>
+        <li><a href="#">Premium Plan</a></li>
+        <li><a href="#">Luxury Plan</a></li>
+      </ul>
+    </li>
+
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="wishlist.html">Wishlist</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+  </ul>
+
+  <div class="right">
+
+    <div class="icons">
+      <a href="myaccount.html"><i class="fa fa-user" onclick="gomyaccount()"></i></a>
+      <a href="cart.html"><i class="fa fa-cart-shopping" onclick="goCart()"></i></a>
+    </div>
+
+     <!-- ACCOUNT -->
+    <div class="account">
+      <a href="login.html"><button class="login-btn" onclick="goLogin()">Login</button></a>
+    </div>
+
+  </div>
+
+</header>
+
+<!-- HERO -->
+<section class="contact-hero">
+  <h1>Contact Us</h1>
+  <p>We are here to help you plan your perfect trip</p>
+</section>
+
+<section class="contact-section">
+
+  <div class="contact-container">
+
+    <!-- LEFT FORM -->
+    <div class="contact-form">
+      <h2>Get In Touch</h2>
+      <p class="form-subtitle">
+        Have questions or planning your next trip? Send us a message and our team will respond quickly with the best travel solutions.
+      </p>
+
+      <div class="form-row">
+        <input id="name" placeholder="Your Name">
+        <input id="email" placeholder="Your Email">
+      </div>
+
+      <input id="subject" placeholder="Subject">
+
+      <textarea id="message" placeholder="Write your message here..."></textarea>
+
+      <button onclick="sendMessage()">Send Message</button>
+      <p id="formStatus"></p>
+    </div>
+
+    <!-- RIGHT INFO -->
+    <div class="contact-info">
+
+      <h2>Contact Information</h2>
+      <p class="info-subtitle">
+        We are always ready to help you plan your perfect journey. Reach us anytime through the following contact details and social platforms.
+      </p>
+
+      <div class="info-box">
+        <i class="fa fa-location-dot"></i>
+        <div>
+          <h4>Location</h4>
+          <p>India, Delhi</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fa fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+91 9999999999</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fa fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>info@safarindia.com</p>
+        </div>
+      </div>
+
+      <!-- SOCIAL -->
+      <div class="contact-socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- MAP -->
+<section class="map-section">
+  <iframe 
+    src="https://maps.google.com/maps?q=india&t=&z=5&ie=UTF8&iwloc=&output=embed">
+  </iframe>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">How to book a trip? <i class="fa fa-plus"></i></h3>
+    <p>Simply choose destination and fill booking form.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">Is payment secure? <i class="fa fa-plus"></i></h3>
+    <p>Yes, all transactions are fully secure.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3 onclick="toggleFAQ(this)">Can I cancel booking? <i class="fa fa-plus"></i></h3>
+    <p>Yes, cancellation policy available.</p>
+  </div>
+
+</section>
+
+<!-- CTA -->
+<section class="contact-cta">
+  <h2>Ready to Travel?</h2>
+  <button>Book Now</button>
+</section>
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-col">
+      <h2>Safar India</h2>
+      <p>Your trusted travel partner for amazing journeys across India.</p>
+
+      <div class="socials">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div> <!-- ✅ FIXED (IMPORTANT) -->
+
+    <!-- LINKS -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#">Destinations</a>
+      <a href="#">Packages</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- DESTINATIONS -->
+    <div class="footer-col">
+      <h3>Top Destinations</h3>
+      <a href="#">Goa</a>
+      <a href="#">Manali</a>
+      <a href="#">Jaipur</a>
+      <a href="#">Kerala</a>
+    </div>
+
+    <!-- NEWSLETTER -->
+    <div class="footer-col">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers</p>
+
+      <div class="newsletter">
+        <input type="email" id="email" placeholder="Enter email">
+        <button onclick="subscribe()">Subscribe</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="footer-bottom">
+    <p>© 2026 Safar India | All Rights Reserved</p>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
